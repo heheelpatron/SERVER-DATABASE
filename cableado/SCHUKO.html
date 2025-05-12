@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHUKO Inventario</title>
+</head>
+<style>
+    .container {
+        margin-top: 20px;
+    }
+    .cabecera { 
+        background-color: beige;
+       
+    }
+    .cabecera thead { 
+        color: white;
+        font-size: 30px;
+        word-spacing: 25px;
+    }
+    .cabecera tr { 
+        font-size: 15px;
+    }
+    .cabecera td { 
+        padding: 10px;
+        text-align: center;
+    }
+    .cabecera thead td {
+        color: black;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="cabecera">
+            <table cellspacing="0" border="1" width="100%">
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Tipo</td> 
+                        <td>Cantidad</td> 
+                        <td>Cambiar información</td>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>1</td>
+                        <td>C19-C20</td>
+                        <td>3</td>
+                        <td>
+                            <form action="modificar.php" method="post">
+                                <input type="submit" value="Modificar"> </td>
+                            </form>                    
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>C13-C14</td>
+                        <td>26</td>
+                        <td>
+                            <form action="modificar.php" method="post">
+                                <input type="submit" value="Modificar"> </td>
+                            </form>                    
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>C19-SCHUKO ENCHUFE</td>
+                        <td>2</td>
+                        <td>
+                            <form action="modificar.php" method="post">
+                                <input type="submit" value="Modificar"> </td>
+                            </form>                    
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>C13-SCHUKO ENCHUFE</td>
+                        <td>19</td>
+                        <td>
+                            <form action="modificar.php" method="post">
+                                <input type="submit" value="Modificar"> </td>
+                            </form>                    
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>C14-SCHUKO ENCHUFE (DOBLE)</td>
+                        <td>1</td>
+                        <td>
+                            <form action="modificar.php" method="post">
+                                <input type="submit" value="Modificar"> </td>
+                            </form>                    
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>SCHUKO HEMBRA-C14</td>
+                        <td>1</td>
+                        <td>
+                            <form action="modificar.php" method="post">
+                                <input type="submit" value="Modificar"> </td>
+                            </form>                    
+                    </tr>
+                    <tr>
+                        <td colspan="7">
+                            <form action="añadir.php" method="post">
+                                <input type="submit" value="Añadir" style="width: 30%; height: 50px;">
+                            </form>                             
+                        </td>
+                    </tr>
+                </tbody>
+                </tr>
+            </table>
+        </div>    
+    </div>
+</body>
+</html>
